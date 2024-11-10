@@ -1,0 +1,1 @@
+module.exports = 'NOMBRE_DEL_COMPONENTE_FORMATIVO'
