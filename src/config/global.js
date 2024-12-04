@@ -1,9 +1,11 @@
 export default {
   global: {
-    componenteFormativo: 'NOMBRE_DEL_COMPONENTE_FORMATIVO',
-    descripcionCurso: 'BREVE_DESCRIPCIÓN',
+    componenteFormativo:
+      'Desarrollo de oportunidades turísticas en el territorio',
+    descripcionCurso:
+      'Esta unidad temática explora estrategias sostenibles para desarrollar oportunidades turísticas en el territorio, abarcando modelos de gestión, criterios de valoración, planificación y manejo estratégico. Además, analiza impactos, efectos y enfoques innovadores como el turismo regenerativo, proporcionando herramientas para la toma de decisiones responsables y efectivas.',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
-    fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
+    fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.svg'),
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],

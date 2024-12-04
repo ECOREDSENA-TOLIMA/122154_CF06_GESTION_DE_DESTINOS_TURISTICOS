@@ -3,16 +3,27 @@
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
     top: 40%
-    right: 50%
+    right: 80%
   &-2
-    animation: float1 2.8s ease-in-out infinite alternate
+    animation: rotacion1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
+    top: 35%
+    right: 18%
 
+@keyframes rotacion1 
+  from 
+    transform: rotate(0deg)  
+  to 
+    transform: rotate(360deg)
 
 @keyframes float1
   0%
     transform: translateY(20px)
   100%
     transform: translateY(0px)
+
+.banner-principal p, .banner-principal h1, .banner-principal h2, .banner-principal h3, .banner-principal h4, .banner-principal h5, .banner-principal h6
+  color: #12263F
+
+.boton *, .boton--sm *
+  color: #FFFFFF
