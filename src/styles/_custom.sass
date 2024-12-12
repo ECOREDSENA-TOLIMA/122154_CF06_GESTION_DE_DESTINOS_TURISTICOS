@@ -27,3 +27,344 @@
 
 .boton *, .boton--sm *
   color: #FFFFFF
+
+// versión escritorio/movil
+@media (min-width: 992px)
+  .desktop 
+    display: inline
+  .movil 
+    display: none
+@media (max-width: 991px)
+  .movil 
+    display: inline
+  .desktop 
+    display: none
+
+.introduccion
+  .cajon.cajon.color-primario
+    background-color: #FEF7EB
+
+.tema1
+  .tarjeta.tarjeta--BG08
+    background-image: url("../assets/curso/temas/BG08.svg")
+    background-size: cover 
+    background-repeat: no-repeat
+    background-position: center
+    margin-inline: -3rem !important
+    @media (max-width: $bp-max-sm)
+      margin-inline: -1.5rem !important
+
+  .slyder__btn
+    background-color: #09614D
+    
+  .slyder__btn i
+    color: #FFFF
+
+  .fondo3-t3
+    background: linear-gradient(to bottom, #FFF, #FFFBF2, #FFF)
+    margin-inline: -3rem
+    @media screen and (max-width: $bp-max-sm)
+      margin-inline: -1.5rem
+
+  .lista-ul li, ol.lista-ol li, .lista-ul--color li, .ol.lista-ol--cuadro li, .lista-ol--cuadro li, .lista-ul--separador li, .lista-ul li
+    display: flex
+
+  .cajon.cajon.color-secundario
+    background-color: #FFE9DF
+
+.tema2
+  .tarjeta--gris
+    background-color: #DFECE9
+
+  .tarjeta.tarjeta--gris.acordion__activo
+    background-color: #FFE9DF
+
+  .linea-tiempo-d__item__content.tarjeta.tarjeta--gris
+    background-color: #DFECE9
+
+  .acordion__accion__btn--b
+    background-color: #09614D
+    color: #fff
+    border: none
+
+  .tarjeta.tarjeta--BG08
+    background-image: url("../assets/curso/temas/BG08.svg")
+    background-size: cover 
+    background-repeat: no-repeat
+    background-position: center
+    margin-inline: -3rem !important
+    @media (max-width: $bp-max-sm)
+      margin-inline: -1.5rem !important
+
+  .slyder__btn
+    background-color: #09614D
+    
+  .slyder__btn i
+    color: #FFFF
+
+  .bloque-texto-g--inverso.color-secundario
+    background-color: #FFE2B7
+
+  @media only screen and (min-width: 430px) and (max-width: 431px)
+    .col-ipad
+      margin-right: 5rem !important
+      width: 100%   
+
+  .fondo3-t3
+    background: linear-gradient(to bottom, #FFF, #FFFBF2, #FFF)
+    margin-inline: -3rem
+    @media screen and (max-width: $bp-max-sm)
+      margin-inline: -1.5rem
+
+  //linea de tiempo d
+
+  .linea-tiempo-d.color-acento-botones.especial
+    .linea-tiempo-d__item--selected
+      .linea-tiempo-d__item__content
+        background-color: #FFE9DF !important
+    .linea-tiempo-d__item__content.tarjeta.tarjeta--gris
+      background-color: #D1E1DD
+  .tarjeta.tarjeta--gris
+    background-color: #D1E1DD
+
+  .linea-tiempo-d__item__content__title
+    height: 50px
+
+  .lista-ul li, ol.lista-ol li, .lista-ul--color li, .ol.lista-ol--cuadro li, .lista-ol--cuadro li, .lista-ul--separador li, .lista-ul li
+    display: flex
+
+.tema3
+  //linea de tiempo d
+
+  .linea-tiempo-d.color-acento-botones.especial
+    .linea-tiempo-d__item--selected
+      .linea-tiempo-d__item__content
+        background-color: #FFE9DF !important
+    .linea-tiempo-d__item__content.tarjeta.tarjeta--gris
+      background-color: #D1E1DD
+  .tarjeta.tarjeta--gris
+    background-color: #D1E1DD
+
+  .cajon.cajon.color-primario
+    background-color: #FEF7EB
+
+  .lista-ul li, ol.lista-ol li, .lista-ul--color li, .ol.lista-ol--cuadro li, .lista-ol--cuadro li, .lista-ul--separador li, .lista-ul li
+    display: flex
+
+  .cajon.cajon.color-secundario
+    background-color: #FFE9DF
+
+  .tarjeta.color-acento-botones *
+    color: #000
+
+.tema4
+  .tabs-a__tab
+    background-color: #D1E1DD
+
+  .tabs-a__tab
+    padding: 15px 10px
+    width: 105%
+
+  .tarjeta.color-acento-botones--borde
+    background-color: #FFE9DF
+    border: solid 4px #FFE9DF
+  
+  .tarjeta--gris
+    background-color: #D1E1DD
+
+  .linea-tiempo-edit
+    .linea-tiempo-d__item__content
+      transition: all .3s linear
+    .linea-tiempo-d__item--selected
+      .linea-tiempo-d__item__number
+        background-color: #09614D !important
+        color: white !important
+      .linea-tiempo-d__item__content
+        background-color: #FFE9DF !important
+
+  .tabla-a thead
+    background-color: #FFCE73
+
+  .tarjeta.tarjeta--BG07
+    background-image: url("../assets/curso/temas/BG07.svg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+
+  // slyder f 
+  .fa-chevron-right, .fa-chevron-left
+    color: #09614D
+
+  // configuración para 3 tarjetas
+  .tarjetas-up
+    overflow: hidden
+    border-radius: 5px
+    position: relative
+    &_card
+      transition: bottom .3s ease-in-out
+      position: absolute
+      border-radius: 5px
+      width: 100%
+      height: 100%
+      left: 0
+      bottom: -82%
+      @media (min-width: $bp-min-xxl)
+        bottom: -89%
+      @media (max-width: $bp-max-xl)
+        bottom: -90%
+      @media (max-width: $bp-max-lg)
+        bottom: -89%
+      @media (max-width: $bp-max-md)
+        bottom: -89%
+      @media (max-width: $bp-max-sm)
+        bottom: -89%
+      @media (max-width: $bp-max-xs)
+        bottom: -87%
+      i:last-child
+        display: none
+    &:hover
+      .tarjetas-up_card
+        bottom: -30%
+        @media (min-width: $bp-min-xxl)
+          bottom: -32%
+        @media (max-width: $bp-max-xl)
+          bottom: -47%
+        @media (max-width: $bp-max-lg)
+          bottom: -40%
+        @media (max-width: $bp-max-md)
+          bottom: -40%
+        @media (max-width: $bp-max-sm)
+          bottom: -40%
+        @media (max-width: $bp-max-xs)
+          bottom: -21%
+      i:first-child
+        display: none
+      i:last-child
+        display: block
+
+  .BG04
+    background-image: url("../assets/curso/temas/BG04.svg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center 
+
+  .cajon.cajon.color-primario
+    background-color: #FEF7EB
+
+.tema5
+  // configuración para 3 tarjetas
+  .tarjetas-up
+    overflow: hidden
+    border-radius: 5px
+    position: relative
+    &_card
+      transition: bottom .3s ease-in-out
+      position: absolute
+      border-radius: 5px
+      width: 100%
+      height: 100%
+      left: 0
+      bottom: -82%
+      @media (min-width: $bp-min-xxl)
+        bottom: -89%
+      @media (max-width: $bp-max-xl)
+        bottom: -90%
+      @media (max-width: $bp-max-lg)
+        bottom: -89%
+      @media (max-width: $bp-max-md)
+        bottom: -89%
+      @media (max-width: $bp-max-sm)
+        bottom: -89%
+      @media (max-width: $bp-max-xs)
+        bottom: -87%
+      i:last-child
+        display: none
+    &:hover
+      .tarjetas-up_card
+        bottom: -30%
+        @media (min-width: $bp-min-xxl)
+          bottom: -32%
+        @media (max-width: $bp-max-xl)
+          bottom: -47%
+        @media (max-width: $bp-max-lg)
+          bottom: -40%
+        @media (max-width: $bp-max-md)
+          bottom: -40%
+        @media (max-width: $bp-max-sm)
+          bottom: -40%
+        @media (max-width: $bp-max-xs)
+          bottom: -21%
+      i:first-child
+        display: none
+      i:last-child
+        display: block
+
+  .BG04
+    background-image: url("../assets/curso/temas/BG04.svg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+
+  .tarjeta--gris
+    background-color: #D1E1DD
+
+  .linea-tiempo-edit
+    .linea-tiempo-d__item__content
+      transition: all .3s linear
+    .linea-tiempo-d__item--selected
+      .linea-tiempo-d__item__number
+        background-color: #09614D !important
+        color: white !important
+      .linea-tiempo-d__item__content
+        background-color: #FFE9DF !important
+
+.tema6
+  //linea de tiempo d
+
+  .linea-tiempo-d.color-acento-botones.especial
+    .linea-tiempo-d__item--selected
+      .linea-tiempo-d__item__content
+        background-color: #FFE9DF !important
+    .linea-tiempo-d__item__content.tarjeta.tarjeta--gris
+      background-color: #D1E1DD
+  .tarjeta.tarjeta--gris
+    background-color: #D1E1DD
+
+  .linea-tiempo-d__item__content__title
+    height: 50px
+
+  .lista-ul li, ol.lista-ol li, .lista-ul--color li, .ol.lista-ol--cuadro li, .lista-ol--cuadro li, .lista-ul--separador li, .lista-ul li
+    display: flex
+
+  .bg-white
+    background-color: #FFE9DF !important
+
+  .cajon.cajon.color-primario
+    background-color: #FEF7EB
+
+.tema7
+  .tarjeta.tarjeta--BG08
+    background-image: url("../assets/curso/temas/BG08.svg")
+    background-size: cover 
+    background-repeat: no-repeat
+    background-position: center
+    margin-inline: -3rem !important
+    @media (max-width: $bp-max-sm)
+      margin-inline: -1.5rem !important
+
+  .slyder__btn
+    background-color: #09614D
+    
+  .slyder__btn i
+    color: #FFFF
+
+  //linea de tiempo d
+
+  .linea-tiempo-d.color-acento-botones.especial
+    .linea-tiempo-d__item--selected
+      .linea-tiempo-d__item__content
+        background-color: #FFE9DF !important
+    .linea-tiempo-d__item__content.tarjeta.tarjeta--gris
+      background-color: #D1E1DD
+  .tarjeta.tarjeta--gris
+    background-color: #D1E1DD
